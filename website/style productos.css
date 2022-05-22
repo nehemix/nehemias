@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(235, 226, 235, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nombre-empresa {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+ul {
+    padding: 30px;
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+
+
+
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+
+
+
+.col-2 {
+    margin: 0px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .home-img {
+    width: 80%;
+}
+
+.antivirus-holder {
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px #aaaaaa;
+}
+
+.antivirus-holder img {
+    width: 50px;
+}
+
+h2 {
+    color: #1d1d1d;
+}
+
+h3 {
+    color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #272724;
+}
+
+h5 {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #292927;
+}
+
+.planes {
+    display: flex;
+
+}
+
+.antivirus-holder {
+    margin: 20px;
+
+}
+
+button {
+    position: relative;
+    background-color: #de0699;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b1057a;
+}
+
+button:after {
+    content: "";
+    background: #950266;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
