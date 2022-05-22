@@ -51,6 +51,14 @@ ul li {
     padding: 10px;
 }
 
+ul li a:hover {
+    color: #de0699;
+}
+
+ul li a:active {
+    color: #de0699;
+}
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
