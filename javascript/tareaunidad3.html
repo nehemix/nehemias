@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="ej1" onclick="myFunction()">ejercicio 1</button>
+    <script>
+        function myFunction() {
+            var number = prompt("cuántos metros hay que recorrer? ", '')
+
+            if (number <= 1000)
+                document.write("pie ")
+
+
+            if (number >= 1000 && number <= 10000)
+                document.write("bicicleta ")
+
+
+            if (number >= 10000 && number <= 30000)
+                document.write("colectivo ")
+
+
+            if (number >= 30000 && number <= 100000)
+                document.write("auto ")
+
+            if (number >= 100000)
+                document.write("avión")
+
+            document.getElementById("ej1").innerHTML
+        }
+
+
+    </script>
+
+    <button id="ej2" onclick="myFunction2()">ejercicio 2</button>
+    <script>
+        function myFunction2() {
+            num1 = prompt("ingrese el primer número: ", '')
+            num2 = prompt("ingrese el segundo número: ", '')
+            num3 = prompt("ingrese el tercer número: ", '')
+
+            num1 = parseInt(num1)
+            num2 = parseInt(num2)
+            num3 = parseInt(num3)
+
+            if (num1 > num2 && num1 > num3) {
+                document.write("el mayor es el " + num1)
+            }
+            else {
+                if (num2 > num3) {
+                    document.write("el mayor es el " + num2)
+                }
+                else {
+                    document.write("el mayor es el " + num3)
+                }
+                document.getElementById("ej2").innerHTML
+
+            }
+        }
+    </script>
+</body>
+
+</html>
