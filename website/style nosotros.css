@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
@@ -9,7 +10,8 @@
 }
 
 body {
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(235, 226, 235, 1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(235, 226, 235, 1) 100%);
     background-repeat: no-repeat;
 }
 
@@ -35,6 +37,7 @@ header {
 
 .nombre-empresa {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
 }
 
 .logo img {
@@ -63,21 +66,26 @@ ul li a:active {
     color: #de0699;
 }
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-}
-
-h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-
-}
-
-.row {
+.bgimg {
+    background-image: url(GettyImages-1199212959.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 25vh;
     display: flex;
-    justify-content: space-between;
-    margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtitle {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff
+}
+
+.row-2 {
+    display: flex;
 }
 
 .col-1 {
@@ -87,77 +95,9 @@ h3 {
     margin-left: 20%;
 }
 
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background: linear-gradient(135deg, rgba(54, 0, 90, 1) 0%, rgba(206, 18, 144, 1) 100%);
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    width: 120px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.button span {
-    font-family: 'Ubuntu', sans-serif;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button:hover span {
-    padding-right: 25px;
-}
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.prizes {
-    padding-top: 20px;
-}
-
-.prizes img {
-    padding: 5px;
-}
-
-.prizes img:nth-child(1) {
-    width: 90px;
-}
-
-.prizes img:nth-child(4) {
-    width: 90px;
-}
-
-.prizes img:nth-child(5) {
-    width: 90px;
-}
-
-
-
 .col-2 {
-    margin: 0px;
+    margin-top: 40px;
     position: relative;
     flex-basis: 60%;
     display: flex;
-    align-items: center;
-}
-
-.col-2 .home-img {
-    width: 80%;
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katnet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style contacto.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" class="logo">
+            <img src="cat logo.png" alt="">
+            <h2 class="nombre-empresa">katnet</h2>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="empresa.html" class="nav-link">Soluciones</a></li>
+                <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav-link">Contactanos</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="row-1">
+            <div class="col-1">
+                <div class="contact_form">
+
+                    <div class="formulario">
+                        <h1>Formulario de contacto</h1>
+                        <h3>Escribinos y en breve los pondremos en contacto con vos</h3>
+
+
+                        <form action="submeter-formulario.php" method="post">
+
+
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                    placeholder="Escribe tu nombre">
+                            </p>
+
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                    placeholder="Escribe tu Email">
+                            </p>
+
+
+
+
+
+                            <p>
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                    placeholder="Escribe un asunto">
+                            </p>
+
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                    required="obligatorio" placeholder="Deja acá tu comentario..."></textarea>
+                            </p>
+
+                            <button type="submit" name="enviar_formulario" id="enviar">
+                                <p>Enviar</p>
+                            </button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="col-1">
+
+                    </div>
+                </div>
+    </main>
+</body>
+
+</html>

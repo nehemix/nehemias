@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
+
 body {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(235, 226, 235, 1) 100%);
+    background: rgb(10,0,19);
+    background: linear-gradient(0deg, rgba(10,0,19,1) 0%, rgba(235,226,235,1) 100%);
     background-repeat: no-repeat;
 }
 
@@ -109,6 +109,7 @@ h3 {
 }
 
 .antivirus-holder {
+    background-color: #1d1d1a;
     border-radius: 15px;
     width: 300px;
     text-align: center;
@@ -125,25 +126,28 @@ h2 {
     color: #1d1d1d;
 }
 
+.subtitle{
+    font-size: 20px;
+    font-weight: 400;
+}
+
 h3 {
-    color: #1d1d1d;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-
 }
 
 h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #272724;
-
+    color: #ffffff;
 }
 
 h5 {
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #292927;
+    color: #ffffff;
 }
 
 .planes {
@@ -153,10 +157,12 @@ h5 {
 
 .antivirus-holder {
     margin: 20px;
+    padding: 70px;
 
 }
 
 button {
+    margin: 10px;
     position: relative;
     background-color: #de0699;
     border-radius: 15px;
