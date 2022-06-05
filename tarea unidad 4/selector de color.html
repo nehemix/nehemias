@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cambia el color del fondo</title>
+    <nav>
+        <h1>Selector de color</h1>
+    </nav>
+</head>
+
+<body>
+
+    <div class="colores">
+        <button class="boton" id="rojo" onclick="cambiarFondoRojo()"></button>
+        <button class="boton" id="verde" onclick="cambiarFondoVerde()"></button>
+        <button class="boton" id="azul" onclick="cambiarFondoAzul()"></button>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .boton {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        #azul {
+            background-color: blue
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        .colores {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: aquamarine;
+        }
+
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function cambiarFondoAzul() {
+            let body = document.getElementsByTagName('body')[0]
+            body.style.backgroundColor = '#0000FF'
+        }
+        function cambiarFondoRojo() {
+            let body = document.getElementsByTagName('body')[0]
+            body.style.backgroundColor = '#FF0000'
+        }
+
+        function cambiarFondoVerde() {
+            let body = document.getElementsByTagName('body')[0]
+            body.style.backgroundColor = '#008000'
+        }
+    </script>
+
+
+
+</body>
+
+</html>

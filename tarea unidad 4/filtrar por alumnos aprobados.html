@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alumnos aprobados</title>
+    <nav class="navbar">
+        <h1>alumnos aprobados</h1>
+    </nav>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        var alumnos = [
+
+            {
+                nombre: 'Juan Gomez',
+                nota: 7
+            },
+            {
+                nombre: 'Pedro Rodriguez',
+                nota: 4
+            },
+            {
+                nombre: 'Roxana García',
+                nota: 8
+            },
+            {
+                nombre: 'Luciano Lopez',
+                nota: 5
+            },
+            {
+                nombre: 'Fernanda Gimenez',
+                nota: 6
+            },
+            {
+                nombre: 'Florencia Martinez',
+                nota: 10
+            },
+            {
+                nombre: 'Raul Sanchez',
+                nota: 7
+            },
+            {
+                nombre: 'Sandra Figueroa',
+                nota: 8
+            }
+
+        ];
+
+        const aprobados = alumnos.filter(alumnos => alumnos.nota >= 7)
+        console.log(aprobados)
+    </script>
+</body>
+
+</html>
