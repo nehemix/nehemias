@@ -1,6 +1,6 @@
-const hogarPage = (props) => {
+const HogarPage = (props) => {
     return (
-        <div>esta es la pagina de servicios para hogar</div>
+        <div>servicios para hogares</div>
     )
 }
-export default hogarPage
+export default HogarPage

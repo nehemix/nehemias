@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-
-const Nav = (props) => {
+import './Nav.css'
+function Nav() {
     return (
         <nav>
             <div className="navbar">

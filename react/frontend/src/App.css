@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(235, 226, 235, 1) 100%);
+    background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    text-decoration: none;
+    color: #1d1d1d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    padding: 100px;
+    display: flex;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nombre-empresa {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+ul {
+    padding: 30px;
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+ul li a:hover {
+    color: #de0699;
+}
+
+ul li a:active {
+    color: #de0699;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 20%;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(54, 0, 90, 1) 0%, rgba(206, 18, 144, 1) 100%);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.prizes {
+    padding-top: 20px;
+}
+
+.prizes img {
+    padding: 5px;
+}
+
+.prizes img:nth-child(1) {
+    width: 90px;
+}
+
+.prizes img:nth-child(4) {
+    width: 90px;
+}
+
+.prizes img:nth-child(5) {
+    width: 90px;
+}
+
+
+
+.col-2 {
+    margin: 0px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .home-img {
+    width: 80%;
 }

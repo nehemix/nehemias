@@ -1,6 +1,6 @@
-const empresaPage = (props) => {
+const EmpresaPage = (props) => {
     return (
         <div>esta es la pagina para servicios para empresas</div>
     )
 }
-export default empresaPage
+export default EmpresaPage

@@ -1,6 +1,6 @@
-const nosotrosPage = (props) => {
+const NosotrosPage = (props) => {
     return (
         <div>Nosotros pagina</div>
     )
 }
-export default nosotrosPage
+export default NosotrosPage
