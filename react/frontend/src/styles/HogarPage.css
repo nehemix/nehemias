@@ -1,0 +1,90 @@
+.antivirus-holder {
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px #aaaaaa;
+    margin: 20px;
+}
+
+.planes-title{
+    height: 100px;
+}
+
+.antivirus-holder img {
+    width: 50px;
+}
+
+h2 {
+    color: #1d1d1d;
+    font-size: 30px;
+}
+
+h3 {
+    color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #272724;
+
+}
+
+h5 {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #292927;
+}
+
+.planes {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+button {
+    position: relative;
+    background-color: #de0699;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b1057a;
+}
+
+button:after {
+    content: "";
+    background: #950266;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}

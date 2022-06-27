@@ -1,0 +1,64 @@
+.holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0px 1px 5px #aaaaaa;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.logo img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+  }
+  
+  .nombre-empresa {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  
+  ul {
+    padding: 30px;
+    display: flex;
+    list-style: none;
+  }
+  
+  ul li {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+  }
+  
+  ul li a:hover {
+    color: #de0699;
+  }
+  
+  ul li a:active {
+    color: #de0699;
+  }
+  
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-left: 16px;
+  }
+  
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 16px;
+  
+  }
