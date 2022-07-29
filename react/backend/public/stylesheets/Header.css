@@ -1,0 +1,38 @@
+*{
+    margin: auto;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 0px;
+    box-shadow: 0px 1px 5px #aaaaaa;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.logo img {
+    margin-right: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #1d1d1d;
+  }
+  
+  .nombre-empresa {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1d1d1d;
+    font-size: 25px;
+  }
