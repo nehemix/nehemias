@@ -1,0 +1,23 @@
+<div class="container" style="margin: 100px auto;">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar la noticia</h4>
+            <form method="post" action="/admin/blog/modificar" style="max-width: 500px;">
+                <input type="hidden" value="{{blog.id}}" name="id">
+                <div class="mb-3">
+                    <input type="text" placeholder="titulo" name="titulo" class="form-control" value="{{blog.titulo}}">
+                </div>
+                <div class="mb-3">
+                    <textarea placeholder="subtitulo" class="form-control" name="subtitulo">{{blog.subtitulo}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <textarea placeholder="cuerpo" class="form-control" name="cuerpo">{{blog.cuerpo}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
