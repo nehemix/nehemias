@@ -69,7 +69,7 @@ router.post('/modificar', async (req, res, next) => {
     //console.log(obj)
 
     await blogModel.modificarBlogById(obj, req.body.id);
-    res.redirect('/admin/novedades');
+    res.redirect('/admin/blog');
 
   } catch (error) {
     console.log(error)

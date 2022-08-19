@@ -32,7 +32,7 @@ async function getBlogById(id) {
 
 async function modificarBlogById(obj, id) {
     try {
-        var query = 'update novedades set ? where id=?';
+        var query = 'update blog set ? where id=?';
         var rows = await pool.query(query, [obj, id]);
         return rows;
     } catch (error) {
